@@ -1,0 +1,279 @@
+@CHARSET "UTF-8";
+body {
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+.fielset{
+
+}
+.pageheading{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	color: #0066CC;
+}
+.heading{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 115%;
+	font-weight: bold;
+}
+.subheading{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 115%;
+	font-weight: bold;
+}
+#login_div{
+	max-width: 400px;
+	min-width: 300px;
+	height: 300px;
+	margin: 5px;
+}
+
+.greenfieldset{
+	border:1px solid #99CC66;
+	padding: 0px;
+}
+
+.header_div fieldset{
+	height: auto;
+}
+.header_div {
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+.footer_menu_div{
+	margin-top: 5px;
+}
+.content{
+	width: 100%;
+}
+.dexagogoinput{
+	border: 1px solid #00A8E6;
+	width: 280px;
+}
+.dexagogoinputextra{
+	border: 1px solid #00A8E6;
+	width: 607px;
+}
+/************************Dexagogo Form Validation************************/
+.required_field{
+	color: #FF0000;
+	font-weight:bold;;
+	vertical-align: top;
+	text-align: left;
+}
+input.disabled {
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+}
+
+input.required, textarea.required {
+	border: 1px solid #00A8E6;
+	width: 250px;
+}
+input.validation-failed, textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color : #FF3300;
+}
+input.validation-passed, textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}
+
+.validation-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #FF3300;
+	color : #FFF;
+	font-weight: bold;
+}
+
+.custom-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #C8AA00;
+	color : #FFF;
+	font-weight: bold;
+}
+
+.form-row {
+	clear: both;
+	padding: 0.5em;
+}
+/************************END Dexagogo Form Validation************************/
+input.DummyRequired, textarea.DummyRequired {
+	border: 1px solid #00A8E6;
+	width: 250px;
+}
+
+/************************Scriptaculous Autocomplete************************/
+
+/**
+* Div for autocomplete dropdown 
+* Attention for the CSS property at the Element level and Page level
+*/
+div.autocomplete {
+	position:relative;
+	overflow: auto;
+	margin-top:10px;
+	margin-left:7px;
+
+	max-height: 420px;
+	min-height: 0px;
+	background-color:white;
+	border:1px solid #888;
+}
+div.autocomplete ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+div.autocomplete ul li.selected { 
+	background-color: #CCFF99;
+}
+div.autocomplete ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  height:22px;
+  cursor:pointer;
+}
+/************************END Scriptaculous Autocomplete************************/
+.dataTable{
+	margin-top:13px;
+	background-color: white;
+}
+.dataTable table{
+	border: 1px solid black;
+	border-spacing: 1px;
+}
+div.dataTable table th{
+	background-color: #A0A0A0;
+	font: bold;
+	margin-right: 2px;
+	margin-left: 1px;
+}
+div.dataTable table tr:HOVER{
+	background-color: #99CCFF;
+	font: bold;
+}
+.dataTable td{
+	margin-right: 4px;
+	margin-left: 1px;
+}
+#message{
+	background-color: #FFFF99;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #000000;
+}
+/* Top Menu CSS; depending on the Admin Rights */
+.top_menu_div{
+}
+.top_nev_div table td{
+	text-align: center;
+	background-color: #D6D3D3;
+}
+.top_nev_div table td:hover{
+	background-color: #99CCFF;
+}
+.top_nev_div table a{
+	text-decoration: none;
+	color: #333333;
+}
+.top_nev_div table a:ACTIVE{
+	color: #333333;
+}
+.top_nev_div table a:VISITED{
+	color: #333333;
+}
+/* CSS for Left Navigation */
+.left_nav_div{
+	display: block;
+	width: 80px;
+}
+.left_nav_div table{
+	margin: 0;
+	padding: 0;
+}
+.left_nav_div td{
+	display: block;
+	background-color: #D6D3D3;
+	margin: 2px 0 0 2px;
+	padding: 0 1px 0 1px;
+}
+.left_nav_div td:hover{
+	background-color: #99CCFF;
+}
+.left_nav_div a{
+	text-decoration: none;
+	color: #333333;
+}
+.left_nav_div a:ACTIVE{
+	color: #333333;
+}
+.left_nav_div a:VISITED{
+	color: #333333;
+}
+#center_container{
+	background-color: white;
+	display: block;
+	width: 100%;
+}
+
+
+/*
+.center_container_div table{
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+.center_container_div table th{
+	background-color: #A0A0A0;
+	font: normal;
+	margin: 3px;
+}
+.center_container_div table tr td{
+	margin: 3px;
+}
+.center_container_div table tr:nth-child(odd){
+	background-color: #FFFFCC;
+}
+.center_container_div table tr:nth-child(even){
+	background-color: #CCFFCC;
+}
+.center_container_div table tr:hover{
+	background-color: #99CCFF;
+}
+*/
+.data_table{
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+.data_table th{
+	background-color: #A0A0A0;
+	font: normal;
+	margin: 3px;
+}
+.data_table tr td{
+	margin: 3px;
+}
+.data_table tr:nth-child(odd){
+	background-color: #FFFFCC;
+}
+.data_table tr:nth-child(even){
+	background-color: #CCFFCC;
+}
+.data_table tr:hover{
+	background-color: #99CCFF;
+}
+#selectedTopMenu{
+	background-color: #99CCFF;
+}
+#selectedLeftMenu{
+	background-color: #99CCFF;
+}
+.clear{
+	clear: both;
+}
