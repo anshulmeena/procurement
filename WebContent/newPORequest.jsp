@@ -1,6 +1,3 @@
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.HashMap" %>
 <%@ page import="java.sql.ResultSet"%>
 <%@ page import="por.database.*" %>
 <%@ page import="por.global.*" %>
@@ -34,7 +31,7 @@
 <td>
 <div class="pageContent" id="pageContent">
 
-<form action="submitOrder.jsp" id="neworder" name="newOrderForm">
+<form action="submitNewOrder.jsp" id="neworder" name="newOrderForm">
 <input type="hidden" value="newPORequest" name="commingFrom"/>
 			<table>
 				<tr>
@@ -123,7 +120,7 @@
 	$('item_name').focus(); 
 	Event.observe($('price'), 'change', function(){$('total_price').update("Total Price: "+$F('quantity')*$F('price'));});
 	Event.observe($('quantity'), 'change', function(){$('total_price').update("Total Price: "+$F('quantity')*$F('price'));});
-	Event.observe($('datepick'), 'change', function(){$('dateRequiredNote').update("Give at least 2 weeks.");});
+	Event.observe($('datepick'), 'click', function(){$('dateRequiredNote').update("Give at least 2 weeks to process.");});
 //-->
 </script>
 </td>

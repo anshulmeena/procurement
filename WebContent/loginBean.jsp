@@ -58,6 +58,9 @@ try{
 		</fieldset>
 	</div>
 </center>
+<center>
+	<p><font style="font-size: 12px">&copy; 2012 HCL Procurement</font></p>
+</center>
 </body>
 <script type="text/javascript">
   var validate = new Validation('login_form', {
